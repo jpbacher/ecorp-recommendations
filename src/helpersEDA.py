@@ -36,12 +36,10 @@ def quick_observation(df, subset):
     subset: a string, the columns to look for duplicate entries
     
     Returns:
-    Prints various properties of the dataframe.
+    Prints the first 5 instances & the number of duplicates.
     """
     
-    print('------The shape of the uncleaned training data: {}\n'.format(df.shape))
     print('------The first 5 rows:\n{}\n'.format(df.head()))
-    print('------The datatypes of the predictors and target:\n{}\n'.format(df.dtypes))
     print('------The number of duplicates: {}'.format(sum(df.duplicated(subset=subset))))
 
 
