@@ -8,25 +8,26 @@ import os
 import pandas as pd
 import numpy as np
 
-def read_dataset(dset, file_type='csv', sep=',', verbose=True):
+def read_dataset(filename, file_type='csv', verbose=True):
     
     """ Reads in a dataset.
     
     Arguments:
-    dset: a string of the dataset name
+    filename: a string of the dataset name
     file_type: format of file 
-    sep: delimiter to use
     verobse: an option to print out information about the dataset
     
     Returns:
     A pandas dataframe with columns in lowercase, for ease of use later
     """
     if file_type == 'csv':
-        df = pd.read_csv('{}.csv'.format(dset), sep=sep)
+        df = pd.read_csv(filename, sep=',')
+    elif file_type == 'tsv':
+        df = pd.read_csv(filename, sep='\t')
     elif file_type == 'txt':
-        df = pd.read_csv('{}.txt'.format(dset), sep=sep)
+        df = pd.read_table(filename)
     elif file_type == 'excel':
-        df = pd.read_csv('{}.xlsx'.format(dset), sep=sep)
+        df = pd.read_csv(filename)
     else:
         raise ValueError('Invalid file type: either excel, csv, or txt')
      
