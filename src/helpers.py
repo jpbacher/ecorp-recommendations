@@ -34,8 +34,8 @@ def read_dataset(filename, file_type='csv', verbose=True):
     df.columns = df.columns.str.lower()
             
     if verbose:
-        print('---------Reading in the dataset: {}.{}---------\n'.format(dset, file_type))
-        print('The number instances: %d\n' % df.shape[0])
+        print('--------- Reading in the dataset: {} ---------\n'.format(filename))
+        print('The number instances: %d' % df.shape[0])
         print('The number of columns: %d\n' % df.shape[1])
         print('The datatypes of features:\n{}'.format(df.dtypes))
 
