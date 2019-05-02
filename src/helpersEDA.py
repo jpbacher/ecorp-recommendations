@@ -44,7 +44,14 @@ def quick_observation(df, subset):
 
 
     
-def unique_values(df, tgt, high_card_num=None):
+def unique_values(df, col):
+    '''look at a features' size of unique values'''
+    
+    print('{}: {} --- unique values'.format(col, df[col].unique().size))
+    
+    
+    
+def unique_cat_values(df, tgt, high_card_num=None):
     '''look for variables that do not contain any variance and variables that
     have high cardinality, something we should be aware of....'''
     
