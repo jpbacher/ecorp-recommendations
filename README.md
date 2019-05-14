@@ -12,7 +12,10 @@ recommendation system for E-Corp (Python)
 
 
 ## Technologies
-
+* Python -- version 3.6.8
+* Numpy --- version 1.15.4
+* Pandas -- version 0.24.2
+* Scipy --- version 1.1.0
 
 ## Status
 This project is: code is completed
