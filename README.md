@@ -15,7 +15,7 @@ recommendation system for E-Corp (Python)
 
 
 ## Status
-This project is: completed, finishing the write-up
+This project is: code is completed
 
 ## Output
 
