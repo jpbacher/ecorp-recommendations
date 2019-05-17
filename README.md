@@ -18,10 +18,10 @@ recommendation system for E-Corp (Python)
 * Scipy --- version 1.1.0
 
 ## Status
-This project is: code is completed
+This project is: code is completed, write-up coming
 
 ## Output
 
 
 ## Contact
-Created by [@joshbacher](https://www.linkedin/in/joshbacher) - please feel free to contact me & thank you for your time!
+Created by [@joshbacher](https://www.linkedin/in/joshbacher) - please feel free to contact me & thank you for your time.
